@@ -6,6 +6,8 @@ var txtOutput = document.querySelector("#outputBox")
 //api url
 var serverURL = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"
 
+// var serverURL = "https://api.funtranslations.com/translate/klingon.json"
+
 // changing url by adding input text
 function getNewURL(text) {
     return serverURL + "?" + "text=" + text
