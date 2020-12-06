@@ -1,0 +1,44 @@
+.header {
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+    background-color: brown;
+}
+
+body {
+    margin: 1px;
+}
+
+#inputText {
+    display: block;
+    padding: 1rem;
+    margin: auto;
+    width: 40vw;
+    height: 10vh;
+    margin-top: 1rem;
+}
+
+#translateBtn {
+    display: block;
+    padding: 1rem;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.outputPointerTxt {
+    display:block;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 20px;
+}
+
+#outputBox {
+    border: 1px solid black;
+    width: 40vw;
+    height: 10vh;
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+}
