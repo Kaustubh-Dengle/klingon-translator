@@ -1,48 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Translator | Klingon</title>
     <link href="stylesklingon.css" rel="stylesheet">
 </head>
+
 <body>
-    <header class = header>
+    <!-- header with klingon info -->
+
+    <header class=header>
         <h1>
             Klingon Translator!
         </h1>
-        <p class = "about">
-            The Klingon language is the language spoken by the fictional Klingons in the Star Trek universe. Within the fictional universe of Star Trek, klingon is derived from the original language spoken by the messianic figure Kahless the Unforgettable, who united the Klingon home-world of QoʼnoS under one empire more than 1500 years ago. Many dialects exist, but the standardized dialect of prestige is almost invariably that of the sitting emperor.
+        <p class="about">
+            The Klingon language is the language spoken by the fictional Klingons in the Star Trek universe. Within the
+            fictional universe of Star Trek, klingon is derived from the original language spoken by the messianic
+            figure Kahless the Unforgettable, who united the Klingon home-world of QoʼnoS under one empire more than
+            1500 years ago. Many dialects exist, but the standardized dialect of prestige is almost invariably that of
+            the sitting emperor.
         </p>
     </header>
 
-    
-
+    <!-- input text area -->
     <textarea placeholder="Enter your english input here" id="inputText"></textarea>
 
+    <!-- button -->
     <button id="translateBtn">
         Translate
     </button>
 
+    <!-- output pointer -->
     <div class="outputPointerTxt">
-        Outpu<span style= "color:white">t will come </span>here
+        Outpu<span style="color:white">t will come </span>here
     </div>
 
+    <!-- output box -->
     <div id="outputBox"></div>
 
-    <div>
+    <!-- navigation links -->
+    <ul class="block-tabs">
+        <li class="tabs-list">
+            <div>
+                <a class="tab-links" href="klingon.html">Go to the Klingon Translator</a>
+            </div>
+        </li>
+        <li class="tabs-list">
+            <div>
+                <a class="tab-links" href="vulcan.html">Go to the Vulcan Translator</a>
+            </div>
+        </li>
+        <li class="tabs-list">
+            <div>
+                <a class="tab-links" href="romulan.html">Go to the Romulan Translator</a>
+            </div>
+        </li>
+    </ul>
 
+    <!-- script link -->
+    <script src=appklingon.js type="text/javascript"></script>
 
-
-
-
-
-
-
-
-    </div>
-
-    <script src = app.js type="text/javascript"></script>
-    
 </body>
+
 </html>
