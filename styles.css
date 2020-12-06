@@ -1,94 +1,107 @@
 @font-face {
-    font-family: klingonFont;
-    src: url(/font/fontklingon.ttf);
-  }
-  
-:root {
-    --txtBoxBg-color: rgb(182, 108, 120);
-    --headerBg-color: rgb(179, 83, 79);
+    font-family: mainpageFont;
+    src: url(/font/font-startrek.ttf);
 }
 
-.header {
-    display: block;
-    text-align: center;
-    margin: auto;
-    padding: 1rem;
-    background-color:var(--headerBg-color);
-    text-shadow: 2px 2px 5px blue;
-    
-}
-
-.header .about {
-    max-width : 800px;
-    display: block;
-    margin: auto;
-    padding-bottom: 1rem;
-    font-size: 20px;
+@font-face {
+    font-family: mainpagetxt;
+    src: url(/font/font-mainpage-txt.ttf);
 }
 
 body {
-    font-family: klingonFont;
+    font-family: mainpageFont;
     margin: 0px;
-    background-image: url("/images/bg5.jpg");
+    background-image: url("/images/startrek-bg.jpg");
     background-position-x: center;
     background-position-y: 11vh;
     background-repeat: no-repeat;
     background-size: 1920px 1080px;
+    background-attachment: fixed;
 }
 
-#inputText {
-    display: block;
+.list{
+    list-style: none;
+    /* padding: 0rem 0.5rem; */
+}
+
+.list-inline {
+    display:inline;
+    padding: 0rem 0.5rem;
+}
+
+/***navigation***/
+
+.navigation {
+    background-color: black;
+    color: white;
     padding: 1rem;
-    margin: auto;
-    width: 40vw;
-    height: 10vh;
-    margin-top: 1.5rem;
-    border-radius: 1rem;
-    font-family: klingonFont;
-    background-color: var(--txtBoxBg-color);
-    font-weight: bold;
-    font-size: 16px;
+    border-bottom: 1px solid rgb(127, 179, 221);
+    position: fixed;
+    width: 100%;
+}
+
+.navigation .navigation-name {
+    font-size: 1.5rem;
+    margin-left: 100px;
+}
+.navigation .nav-links {
+    text-decoration: none;
+    color:white;
+}
+.nav-links:hover {
     opacity: 0.7;
-    
+}
+.navigation .nav-tabs {
+    text-align:right;
 }
 
-#translateBtn {
-    font-family: klingonFont;
+.header {
+    padding: 2rem;
+    padding-top: 5rem;
+}
+
+
+.header .header-text {
+     font-size:50px;
+     text-align: center;
+     padding-top: 2rem;
+     color: white;
+     font-weight: lighter;
+}
+
+.normal-text {
+    font-family: mainpagetxt;
+    color: white;
     display: block;
-    padding: 1rem;
     margin: auto;
-    margin-top: 1rem;
-    border-radius: 1rem;
-    background-color: var(--txtBoxBg-color);
-    font-size: 16px;
-    opacity: 0.8;
-    font-weight: bold;
-}
-
-#translateBtn:hover {
-    opacity: 1;
-}
-
-.outputPointerTxt {
-    display:block;
+    max-width: 800px;
+    font-size: larger;
     text-align: center;
-    margin-top: 1rem;
-    font-size: 20px;
-    font-weight: bolder;
-    opacity: 0.7;
+
+}
+.block-tabs {
+    padding: 1rem;
+    text-align: center;
+}
+.block-tabs .tabs-list{
+    display: inline-block;
+    border: 1px solid  rgb(127, 179, 221);
+    padding: 1rem;
+    max-width: 300px;
+    color: white;
+    font-family: mainpagetxt;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
 }
 
-#outputBox {
-    border: 1px solid black;
-    width: 40vw;
-    height: 10vh;
-    display: block;
-    margin: auto;
-    margin-top: 1rem;
-    padding: 1rem;
-    background-color: var(--txtBoxBg-color);
-    opacity: 0.7;
-    border-radius: 1rem;
-    font-weight: bold;
-    font-size: 20px;
+.block-tabs .tab-links {
+    
+    color:rgb(127, 179, 221);
+    border: 1px solid rgb(127, 179, 221);
+    font-weight: bolder;
+    border-radius: 0.3rem;
+}
+.tab-links:hover {
+    opacity: 0.9;
 }
