@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'RomulanFalcon';
+    src: url('/font/RomulanFalcon.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+:root {
+    --txtBoxBg-color: rgb(58, 71, 58);
+    --headerBg-color: black;
+}
+
+
+
+.header {
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+    background-color:var(--headerBg-color);
+    text-shadow: 2px 2px 5px blue;
+    opacity: 0.8;
+    
+}
+.header .about-header {
+    font-size: 30px;
+    color: rgb(80, 238, 49);
+    font-weight: bolder;
+    
+}
+
+.header .about {
+    max-width : 800px;
+    display: block;
+    margin: auto;
+    padding-bottom: 1rem;
+    font-size: 22px;
+    color: white;
+}
+
+body {
+    font-family: RomulanFalcon;
+    margin: 0px;
+    background-image: url("/images/romulan-bg2.jpg");
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px;
+    background-attachment: fixed;
+    
+}
+
+#inputText {
+    display: block;
+    padding: 1rem;
+    margin: auto;
+    width: 40vw;
+    height: 10vh;
+    margin-top: 1.5rem;
+    border-radius: 1rem;
+    font-family: RomulanFalcon;
+    background-color: var(--txtBoxBg-color);
+    font-weight: bold;
+    font-size: 24px;
+    opacity: 0.9;
+    color: white;
+    
+}
+
+#translateBtn {
+    font-family: RomulanFalcon;
+    display: block;
+    padding: 1rem;
+    margin: auto;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    background-color: var(--txtBoxBg-color);
+    font-size: 20px;
+    opacity: 0.95;
+    font-weight: bold;
+    color: white;
+}
+
+#translateBtn:hover {
+    opacity: 1;
+}
+
+.outputPointerTxt {
+    display:block;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 24px;
+    font-weight: bolder;
+    opacity: 1;
+    color:  white; 
+    /* text-shadow: 2px 2px 2px rgb(3, 3, 141); */
+}
+
+#outputBox {
+    border: 1px solid black;
+    width: 40vw;
+    height: 10vh;
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--txtBoxBg-color);
+    opacity: 0.9;
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: 24px;
+    font-weight: bolder;
+    color: white;
+}
+
+.block-tabs {
+    padding: 1rem;
+    text-align: center;
+}
+.block-tabs .tabs-list{
+    display: inline-block;
+    border: 1px solid  rgb(77, 54, 54);
+    padding: 1rem;
+    max-width: 300px;
+    font-family: mainpagetxt;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+
+.block-tabs .tab-links {
+    font-family: RomulanFalcon;
+    color:white;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: larger;
+}
+.tab-links:hover {
+    opacity: 0.7;
+}

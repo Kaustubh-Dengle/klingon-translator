@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+  
+:root {
+    --txtBoxBg-color: rgb(107, 159, 219);
+    --headerBg-color: black;
+}
+
+
+
+.header {
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+    background-color:var(--headerBg-color);
+    text-shadow: 2px 2px 5px blue;
+    
+}
+.header .about-header {
+    font-size: 30px;
+    color: rgb(107, 159, 219);
+    font-weight: bolder;
+}
+
+.header .about {
+    max-width : 800px;
+    display: block;
+    margin: auto;
+    padding-bottom: 1rem;
+    font-size: 22px;
+    color: white;
+}
+
+body {
+    font-family: 'Annie Use Your Telescope', cursive;
+    margin: 0px;
+    background-image: url("/images/vulcan-bg.jpg");
+    background-position-x: center;
+    background-position-y: 11vh;
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px;
+    background-attachment: fixed;
+    
+}
+
+#inputText {
+    display: block;
+    padding: 1rem;
+    margin: auto;
+    width: 40vw;
+    height: 10vh;
+    margin-top: 1.5rem;
+    border-radius: 1rem;
+    font-family: 'Annie Use Your Telescope', cursive;
+    background-color: var(--txtBoxBg-color);
+    font-weight: bold;
+    font-size: 24px;
+    opacity: 0.7;
+    
+}
+
+#translateBtn {
+    font-family: 'Annie Use Your Telescope', cursive;
+    display: block;
+    padding: 1rem;
+    margin: auto;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    background-color: var(--txtBoxBg-color);
+    font-size: 20px;
+    opacity: 0.95;
+    font-weight: bold;
+}
+
+#translateBtn:hover {
+    opacity: 1;
+}
+
+.outputPointerTxt {
+    display:block;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 24px;
+    font-weight: bolder;
+    opacity: 0.7;
+    color:  rgb(107, 159, 219); 
+    text-shadow: 2px 2px 2px rgb(3, 3, 141);
+}
+
+#outputBox {
+    border: 1px solid black;
+    width: 40vw;
+    height: 10vh;
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--txtBoxBg-color);
+    opacity: 0.7;
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.block-tabs {
+    padding: 1rem;
+    text-align: center;
+}
+.block-tabs .tabs-list{
+    display: inline-block;
+    border: 1px solid  rgb(77, 54, 54);
+    padding: 1rem;
+    max-width: 300px;
+    font-family: mainpagetxt;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+
+.block-tabs .tab-links {
+    font-family: 'Annie Use Your Telescope', cursive;
+    color:rgb(107, 159, 219);
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: larger;
+}
+.tab-links:hover {
+    opacity: 0.7;
+}

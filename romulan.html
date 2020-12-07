@@ -4,8 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Translator | Romulan</title>
+    <link rel="stylesheet" href="stylesromulan.css">
+    <link rel="shortcut icon" type="image/ico" sizes="64x64" href="icon/favicon.ico">
 </head>
 <body>
+    <!-- header with vulcan info -->
+
+    <header class=header>
+        <h1 class= "about-header">
+            Romulan Translator!
+        </h1>
+        <p class="about">
+            The Romulan language was used within the Romulan Star Empire. Its written form consists of square and
+            rectangular letters. The spoken language had three dialects and was difficult to distinguish from the
+            Vulcan language to those not proficient in it. It was also known as Rihannsu. There was a joint project
+            between the Romulan Reclamation Site and the Borg Reclamation Project thus announcements and crew
+            conversations tended to be in both English and Romulan. 
+        </p>
+    </header>
+
+    <!-- input text area -->
+    <textarea placeholder="Enter your english input here" id="inputText"></textarea>
+
+    <!-- button -->
+    <button id="translateBtn">
+        Translate
+    </button>
+
+    <!-- output pointer -->
+    <div class="outputPointerTxt">
+        Romulan Translation 👇
+    </div>
+
+    <!-- output box -->
+    <div id="outputBox"></div>
+
+    <!-- navigation links -->
+    <ul class="block-tabs">
+        <li class="tabs-list">
+            <div>
+                <a class="tab-links" href="index.html">Go to the Main Page</a>
+            </div>
+        </li>
+        <li class="tabs-list">
+            <div>
+                <a class="tab-links" href="klingon.html">Go to the Klingon Translator</a>
+            </div>
+        </li>
+        <li class="tabs-list">
+            <div>
+                <a class="tab-links" href="vulcan.html">Go to the Vulcan Translator</a>
+            </div>
+        </li>
+    </ul>
+
+    <!-- script link -->
+    <script src=appvulcan.js type="text/javascript"></script>
+
     
 </body>
 </html>
